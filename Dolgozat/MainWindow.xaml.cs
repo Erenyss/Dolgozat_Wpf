@@ -39,5 +39,10 @@ namespace Dolgozat
         {
             ShowContent(new UserControl1());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ShowContent((UserControl2)sender);
+        }
     }
 }

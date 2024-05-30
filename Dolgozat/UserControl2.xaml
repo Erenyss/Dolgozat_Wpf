@@ -5,8 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Dolgozat"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1200">
+             d:DesignHeight="600" d:DesignWidth="1200"
+             >
     <Grid>
+        <Border Background="LightGreen" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" Margin="0,0,30,30">
+            <TextBlock FontSize="24" Text="Information 7" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold" Foreground="LightSkyBlue" Margin="322,10,0,0"/>
+        </Border>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="5*"/>
@@ -19,13 +23,14 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.ColumnSpan="3" FontSize="24" Text="Information 7" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Foreground="LightSkyBlue"/>
-
-        <TextBlock Grid.Row="1" Grid.Column="1" Text="Product Name:" Margin="50,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
-        <TextBlock Grid.Row="2" Grid.Column="1" Text="Description" Margin="50,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
-        <StackPanel Grid.ColumnSpan="3" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="150,0,0,0">
-            <Button Content="Save" Grid.Row="3" Grid.Column="1" FontSize="20" Margin="0,20,10,20" Width="150" Background="Green"></Button>
-            <Button Content="Cancel" Grid.Row="3" Grid.Column="2" FontSize="20" Margin="10,20,0,20" Width="150" Background="Yellow"></Button>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Product Name:" Margin="50,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" Width="133"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Description:" Margin="50,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" Height="39"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Width="425" Margin="110,58,0,38" HorizontalAlignment="Left"/>
+        <TextBox Grid.Row="2" Grid.Column="2" Height="50" Margin="54,2,65,23"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Margin="54,58,515,38"/>
+        <StackPanel Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="150,0,0,0">
+            <Button Content="Save" Grid.Row="3" Grid.Column="1" FontSize="20" Margin="0,40,10,20" Width="150" Height="45" Background="Green" Foreground="White"></Button>
+            <Button Content="Cancel" Grid.Row="3" Grid.Column="2" Grid.RowSpan="2" FontSize="20" Margin="10,40,0,20" Width="150" Height="45" Background="Yellow"></Button>
         </StackPanel>
 
     </Grid>
